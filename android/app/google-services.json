@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "113142352242",
+    "project_id": "starling-d419a",
+    "storage_bucket": "starling-d419a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113142352242:android:dd6df30989af5d60e175eb",
+        "android_client_info": {
+          "package_name": "com.example.ubereatsresturant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113142352242-7ssc1kol6jhvbrl7as9lkqcg02hm9ens.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ubereatsresturant",
+            "certificate_hash": "bd299c4b65bf505fc6d9983be145ce1fcece9943"
+          }
+        },
+        {
+          "client_id": "113142352242-s5dnt2gbvebam5gle514urt127avoefj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ubereatsresturant",
+            "certificate_hash": "908f20a3a79bd4613e36ce145290380fb21b51f5"
+          }
+        },
+        {
+          "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkJ_XuG6UB8mgUxy3QGtk3mbgghMhfgrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "113142352242-4227hdvkejrt0ldffuod18ptc0dvsjkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ubereatsresturant"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
