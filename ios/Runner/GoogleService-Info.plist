@@ -2,18 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>113142352242-6kkbbn8krqnqmo77objqi3amjc803qh3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.113142352242-6kkbbn8krqnqmo77objqi3amjc803qh3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>113142352242-12d4galk5vjhc6v7q55dil4n578pq65d.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCI36gLdCz8pqXS0NgXCsMpstXqRY1jDTA</string>
+	<string>AIzaSyAHpgZ2Ot7cXBqDWIjAVJxunJLKyzYDUyk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>197005284103</string>
+	<string>113142352242</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.ubereats</string>
 	<key>PROJECT_ID</key>
-	<string>uber-eats-e6fa7</string>
+	<string>starling-d419a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>uber-eats-e6fa7.appspot.com</string>
+	<string>starling-d419a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:197005284103:ios:41a5b934053a8db82ceba2</string>
+	<string>1:113142352242:ios:4d7a34c7511beb2ce175eb</string>
+	<key>DATABASE_URL</key>
+	<string>https://starling-d419a-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>

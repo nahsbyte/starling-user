@@ -1,10 +1,167 @@
 {
   "project_info": {
     "project_number": "113142352242",
+    "firebase_url": "https://starling-d419a-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "starling-d419a",
     "storage_bucket": "starling-d419a.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113142352242:android:7f28f1b45983ac0de175eb",
+        "android_client_info": {
+          "package_name": "com.drivers.ubereatsdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113142352242-12d4galk5vjhc6v7q55dil4n578pq65d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drivers.ubereatsdriver",
+            "certificate_hash": "bd299c4b65bf505fc6d9983be145ce1fcece9943"
+          }
+        },
+        {
+          "client_id": "113142352242-5lo9sodclr5jtglhsbnspmkmhf22kt21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drivers.ubereatsdriver",
+            "certificate_hash": "908f20a3a79bd4613e36ce145290380fb21b51f5"
+          }
+        },
+        {
+          "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkJ_XuG6UB8mgUxy3QGtk3mbgghMhfgrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "113142352242-4227hdvkejrt0ldffuod18ptc0dvsjkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ubereatsresturant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113142352242:android:daf676909def8501e175eb",
+        "android_client_info": {
+          "package_name": "com.example.ubereats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113142352242-2dfgimqpupkcnoefdrdap8ks9vbus9o3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ubereats",
+            "certificate_hash": "908f20a3a79bd4613e36ce145290380fb21b51f5"
+          }
+        },
+        {
+          "client_id": "113142352242-opas6sdv143ipbaguigmlmao33stt98k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ubereats",
+            "certificate_hash": "bd299c4b65bf505fc6d9983be145ce1fcece9943"
+          }
+        },
+        {
+          "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkJ_XuG6UB8mgUxy3QGtk3mbgghMhfgrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "113142352242-4227hdvkejrt0ldffuod18ptc0dvsjkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ubereatsresturant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113142352242:android:3c58534afbcba06ce175eb",
+        "android_client_info": {
+          "package_name": "com.example.ubereatsdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113142352242-3tc799eij9jtjcu021bfmakd1anc6jqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ubereatsdriver",
+            "certificate_hash": "bd299c4b65bf505fc6d9983be145ce1fcece9943"
+          }
+        },
+        {
+          "client_id": "113142352242-4oddoa14ifg5ttkt3mqbnel4g6bilkdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ubereatsdriver",
+            "certificate_hash": "908f20a3a79bd4613e36ce145290380fb21b51f5"
+          }
+        },
+        {
+          "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkJ_XuG6UB8mgUxy3QGtk3mbgghMhfgrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113142352242-nih5k6mvngtph4489obql1kkl3ubc4qi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "113142352242-4227hdvkejrt0ldffuod18ptc0dvsjkp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ubereatsresturant"
+              }
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:113142352242:android:dd6df30989af5d60e175eb",
