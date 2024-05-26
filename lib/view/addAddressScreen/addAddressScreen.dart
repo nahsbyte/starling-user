@@ -1,13 +1,11 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:get/get.dart';
+// import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'package:ubereats/constant/constant.dart';
@@ -32,13 +30,16 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
   TextEditingController houseNoController = TextEditingController();
   TextEditingController apartmentController = TextEditingController();
   TextEditingController savaeAddressAsController = TextEditingController();
-  CameraPosition initialCameraPosition = const CameraPosition(
-    target: LatLng(37.4, -122),
-    zoom: 14,
-  );
-  Completer<GoogleMapController> googleMapController = Completer();
-  GoogleMapController? mapController;
+
+  // CameraPosition initialCameraPosition = const CameraPosition(
+  //   target: LatLng(37.4, -122),
+  //   zoom: 14,
+  // );
+  // Completer<GoogleMapController> googleMapController = Completer();
+  // GoogleMapController? mapController;
   bool registerButoonPressed = false;
+  final LocationServices locationServices = Get.find();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -70,7 +71,36 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
             SizedBox(
               height: 40.h,
               width: 100.w,
-              child: GoogleMap(
+              child: FlutterMap(
+                options: MapOptions(
+                  initialCenter: locationServices.getCurrentLatLng(),
+                  initialZoom: 10.0,
+                ),
+                children: [
+                  TileLayer(
+                    urlTemplate:
+                        "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    subdomains: ['a', 'b', 'c'],
+                  ),
+                  MarkerLayer(
+                    markers: [
+                      Marker(
+                        width: 30.0,
+                        height: 30.0,
+                        point: locationServices.getCurrentLatLng(),
+                        child: Container(
+                          child: const Icon(
+                            Icons.my_location,
+                            color: Colors.red,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+              /*GoogleMap(
                 initialCameraPosition: initialCameraPosition,
                 mapType: MapType.normal,
                 myLocationButtonEnabled: true,
@@ -93,7 +123,7 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                   mapController!.animateCamera(
                       CameraUpdate.newCameraPosition(cameraPosition));
                 },
-              ),
+              ),*/
             ),
             SizedBox(
               height: 2.h,
@@ -132,8 +162,8 @@ class _AddAddressScreenState extends State<AddAddressScreen> {
                   });
 
                   Position location =
-                      await LocationServices.getCurretnLocation();
-                      String addressID = uuid.v1().toString();
+                      await locationServices.getCurrentLocation();
+                  String addressID = uuid.v1().toString();
                   UserAddressModel addressData = UserAddressModel(
                     addressID: addressID,
                     userID: auth.currentUser!.uid,

@@ -1,11 +1,14 @@
 // ignore_for_file: use_build_context_synchronously
 import 'dart:developer';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:ubereats/constant/constant.dart';
 import 'package:ubereats/controller/provider/authProvider/mobileAuthProvider.dart';
+import 'package:ubereats/controller/services/locationServices/locationServices.dart';
 import 'package:ubereats/controller/services/pushNotificationServices/pushNotificationServices.dart';
 import 'package:ubereats/view/authScreens/mobileLoginScreen.dart';
 import 'package:ubereats/view/authScreens/otpScreen.dart';
@@ -29,6 +32,7 @@ class MobileAuthServices {
 
   static receiveOTP(
       {required BuildContext context, required String mobileNo}) async {
+
     try {
       await auth.verifyPhoneNumber(
         phoneNumber: mobileNo,
@@ -80,8 +84,12 @@ class MobileAuthServices {
   }
 
   static checkUserRegistration({required BuildContext context}) async {
+    LocationServices locationServices = Get.put(LocationServices());
+
     bool userIsRegistered = false;
     try {
+      await locationServices.getCurrentLocation();
+
       await firestore
           .collection('User')
           .where('userID', isEqualTo: auth.currentUser!.uid)
